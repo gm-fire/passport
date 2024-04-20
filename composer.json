@@ -1,6 +1,6 @@
 {
-    "name": "fof/passport",
-    "description": "The OAuth2 (and Laravel passport) compatible oauth extension",
+    "name": "gm-fire/passport",
+    "description": "Fork of fof/Passport The OAuth2 (and Laravel passport) compatible oauth extension",
     "keywords": [
         "flarum",
         "passport",
@@ -12,9 +12,9 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Daniël Klabbers",
-            "email": "daniel+flarum@klabbers.email",
-            "homepage": "https://hyn.me/"
+            "name": "gm-fire",
+            "email": "gm_fire@sina.com",
+            "homepage": ""
         },
         {
             "name": "Clark Winkelmann",
