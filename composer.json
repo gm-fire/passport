@@ -12,9 +12,9 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "gm-fire",
-            "email": "gm_fire@sina.com",
-            "homepage": ""
+            "name": "Daniël Klabbers",
+            "email": "daniel+flarum@klabbers.email",
+            "homepage": "https://hyn.me/"
         },
         {
             "name": "Clark Winkelmann",
@@ -43,7 +43,7 @@
     },
     "extra": {
         "flarum-extension": {
-            "title": "FoF Passport",
+            "title": "Passport",
             "category": "feature",
             "icon": {
                 "name": "fas fa-key",
@@ -62,7 +62,7 @@
     },
     "autoload": {
         "psr-4": {
-            "FoF\\Passport\\": "src/"
+            "GmFire\\Passport\\": "src/"
         }
     },
     "require-dev": {

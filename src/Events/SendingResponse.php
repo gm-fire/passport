@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace FoF\Passport\Events;
+namespace GmFire\Passport\Events;
 
 use League\OAuth2\Client\Provider\ResourceOwnerInterface;
 use Psr\Http\Message\ResponseInterface;

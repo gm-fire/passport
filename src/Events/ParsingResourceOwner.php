@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace FoF\Passport\Events;
+namespace GmFire\Passport\Events;
 
 class ParsingResourceOwner
 {

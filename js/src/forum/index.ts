@@ -4,17 +4,17 @@ import LogInButtons from 'flarum/forum/components/LogInButtons';
 import LogInButton from 'flarum/forum/components/LogInButton';
 import ItemList from 'flarum/common/utils/ItemList';
 
-app.initializers.add('fof-passport', () => {
+app.initializers.add('gm-fire-passport', () => {
   extend(LogInButtons.prototype, 'items', function (items: ItemList) {
     items.add(
-      'fof-passport',
+      'gm-fire-passport',
       LogInButton.component(
         {
           className: 'Button LogInButton--passport',
-          icon: app.forum.attribute('fof-passport.loginIcon'),
+          icon: app.forum.attribute('gm-fire-passport.loginIcon'),
           path: '/auth/passport',
         },
-        app.forum.attribute('fof-passport.loginTitle')
+        app.forum.attribute('gm-fire-passport.loginTitle')
       )
     );
   });

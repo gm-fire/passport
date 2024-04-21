@@ -1,5 +1,5 @@
 {
-    "name": "@fof/passport",
+    "name": "@gm-fire/passport",
     "private": true,
     "prettier": "@flarum/prettier-config",
     "dependencies": {
@@ -19,4 +19,3 @@
       "format-check": "prettier --check src"
     }
   }
-  

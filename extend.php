@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace FoF\Passport;
+namespace GmFire\Passport;
 
 use Flarum\Api\Serializer\ForumSerializer;
 use Flarum\Extend;

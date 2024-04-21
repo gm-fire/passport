@@ -9,15 +9,15 @@
  * file that was distributed with this source code.
  */
 
-namespace FoF\Passport\Controllers;
+namespace GmFire\Passport\Controllers;
 
 use Exception;
 use Flarum\Forum\Auth\Registration;
 use Flarum\Forum\Auth\ResponseFactory;
 use Flarum\Http\UrlGenerator;
 use Flarum\Settings\SettingsRepositoryInterface;
-use FoF\Passport\Events\SendingResponse;
-use FoF\Passport\Providers\PassportProvider;
+use GmFire\Passport\Events\SendingResponse;
+use GmFire\Passport\Providers\PassportProvider;
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Support\Arr;
 use Laminas\Diactoros\Response\RedirectResponse;
@@ -43,8 +43,8 @@ class PassportController implements RequestHandlerInterface
     protected function getProvider($redirectUri)
     {
         return new PassportProvider([
-            'clientId'     => $this->settings->get('fof-passport.app_id'),
-            'clientSecret' => $this->settings->get('fof-passport.app_secret'),
+            'clientId'     => $this->settings->get('gm-fire-passport.app_id'),
+            'clientSecret' => $this->settings->get('gm-fire-passport.app_secret'),
             'redirectUri'  => $redirectUri,
             'settings'     => $this->settings,
         ]);
@@ -55,7 +55,7 @@ class PassportController implements RequestHandlerInterface
      */
     protected function getAuthorizationUrlOptions()
     {
-        $scopes = $this->settings->get('fof-passport.app_oauth_scopes', '');
+        $scopes = $this->settings->get('gm-fire-passport.app_oauth_scopes', '');
 
         return ['scope' => $scopes];
     }
