@@ -23,7 +23,7 @@ To upgrade from the old extension to the new one:
 - Run:
 
 ```sh
-composer require fof/passport:*
+composer require gm-fire/passport:*
 ```
 
 Composer should let you know that `flagrow/passport` has been automatically removed.

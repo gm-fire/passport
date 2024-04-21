@@ -39,7 +39,8 @@
         "league/oauth2-client": "^2.3.0"
     },
     "replace": {
-        "flagrow/passport": "*"
+        "flagrow/passport": "*",
+        "fof/passport": "*"
     },
     "extra": {
         "flarum-extension": {
