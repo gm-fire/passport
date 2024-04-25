@@ -10,11 +10,11 @@ app.initializers.add('gm-fire-passport', () => {
       'gm-fire-passport',
       LogInButton.component(
         {
-          className: 'Button LogInButton--passport',
-          icon: app.forum.attribute('gm-fire-passport.loginIcon'),
+          className: 'Button LogInButton-fof-passport',
+          icon: app.forum.attribute('fof-passport.loginIcon'),
           path: '/auth/passport',
         },
-        app.forum.attribute('gm-fire-passport.loginTitle')
+        app.forum.attribute('fof-passport.loginTitle')
       )
     );
   });

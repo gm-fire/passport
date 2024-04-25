@@ -43,8 +43,8 @@ class PassportController implements RequestHandlerInterface
     protected function getProvider($redirectUri)
     {
         return new PassportProvider([
-            'clientId'     => $this->settings->get('gm-fire-passport.app_id'),
-            'clientSecret' => $this->settings->get('gm-fire-passport.app_secret'),
+            'clientId'     => $this->settings->get('fof-passport.app_id'),
+            'clientSecret' => $this->settings->get('fof-passport.app_secret'),
             'redirectUri'  => $redirectUri,
             'settings'     => $this->settings,
         ]);
@@ -55,7 +55,7 @@ class PassportController implements RequestHandlerInterface
      */
     protected function getAuthorizationUrlOptions()
     {
-        $scopes = $this->settings->get('gm-fire-passport.app_oauth_scopes', '');
+        $scopes = $this->settings->get('fof-passport.app_oauth_scopes', '');
 
         return ['scope' => $scopes];
     }

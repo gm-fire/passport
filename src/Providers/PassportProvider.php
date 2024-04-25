@@ -40,7 +40,7 @@ class PassportProvider extends AbstractProvider
      */
     public function getBaseAuthorizationUrl()
     {
-        return $this->settings->get('gm-fire-passport.app_auth_url');
+        return $this->settings->get('fof-passport.app_auth_url');
     }
 
     /**
@@ -54,7 +54,7 @@ class PassportProvider extends AbstractProvider
      */
     public function getBaseAccessTokenUrl(array $params)
     {
-        return $this->settings->get('gm-fire-passport.app_token_url');
+        return $this->settings->get('fof-passport.app_token_url');
     }
 
     /**
@@ -66,7 +66,7 @@ class PassportProvider extends AbstractProvider
      */
     public function getResourceOwnerDetailsUrl(AccessToken $token)
     {
-        return $this->settings->get('gm-fire-passport.app_user_url');
+        return $this->settings->get('fof-passport.app_user_url');
     }
 
     /**
@@ -79,7 +79,7 @@ class PassportProvider extends AbstractProvider
      */
     protected function getDefaultScopes()
     {
-        return explode(',', $this->settings->get('gm-fire-passport.app_oauth_scopes', ''));
+        return explode(',', $this->settings->get('fof-passport.app_oauth_scopes', ''));
     }
 
     /**
