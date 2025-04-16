@@ -28,12 +28,6 @@
         "forum": "https://discuss.flarum.org/d/5203"
     },
     "homepage": "https://friendsofflarum.org",
-    "funding": [
-        {
-            "type": "website",
-            "url": "https://opencollective.com/fof/donate"
-        }
-    ],
     "require": {
         "flarum/core": "^1.2.0",
         "league/oauth2-client": "^2.3.0"
