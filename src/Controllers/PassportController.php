@@ -95,16 +95,23 @@ class PassportController implements RequestHandlerInterface
         $token = $provider->getAccessToken('authorization_code', compact('code'));
         $user = $provider->getResourceOwner($token);
 
+        // 判断头像是否能读取
+        if ($user->toArray()['avatar']) {
+            $avatarData = @file_get_contents($user->toArray()['avatar']);
+        }
+
         $response = $this->response->make(
             'passport',
             $user->getId(),
-            function (Registration $registration) use ($user) {
+            function (Registration $registration) use ($user, $avatarData) {
                 $registration
                     ->provideTrustedEmail($user->getEmail())
                     ->provide('nickname', $user->toArray()['username'])
-                    ->provide('username', $user->getId().'')
-                    ->provideAvatar($user->toArray()['avatar'])
-                    ->setPayload($user->toArray());
+                    ->provide('username', $user->getId().'');
+                if ($avatarData) {
+                    $registration->provideAvatar($user->toArray()['avatar']);
+                }
+                $registration->setPayload($user->toArray());
             }
         );
 
